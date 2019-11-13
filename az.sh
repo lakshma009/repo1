@@ -12,4 +12,4 @@ az vm create \
 #az vm open-port --port 80 --resource-group myResource1 --name myVM1
 
 az vm open-port --port 22 --resource-group myResource1 --name myVM1
-sshpass -p 'Lakshma@12345' ssh -t -t -o StrictHostKeyChecking=no lakshma@40.121.48.14 
+sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 
