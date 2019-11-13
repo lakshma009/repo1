@@ -15,7 +15,7 @@
 
 sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 << 'EOF'
 
-sudo su -
+sudo -S <<< "Azure.123456@e(password)”
 
 yum -y update
 
