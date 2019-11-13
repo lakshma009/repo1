@@ -1,4 +1,4 @@
-az login -u lakshma1119@gmail.com -p Lakshma@123
+az login -u yrajavarapu@nisum.com -p Nisum.1090@e
 
 az group create --name myResource1 --location eastus
 
