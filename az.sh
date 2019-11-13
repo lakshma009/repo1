@@ -14,13 +14,7 @@
 #az vm open-port --port 22 --resource-group myResource1 --name myVM1
 
 sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 << 'ENDSSH'
-
-sudo -S <<< "Azure.123456@e(password)”
-
 yum -y update
-
 yum install java-1.8.0-openjdk -y
-
 exit
-
 ENDSSH
