@@ -13,7 +13,11 @@
 
 #az vm open-port --port 22 --resource-group myResource1 --name myVM1
 
-sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 <<'ENDSSH'
-ls -l
-ENDSSH
+sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 << 'EOF'
+
+sudo -S <<< "Azure.123456@e(password)”
+
+su -c "yum install java-1.8.0-openjdk" -Y
+
+wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
 
