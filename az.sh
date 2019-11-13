@@ -15,5 +15,6 @@
 
 sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.121.48.14 << 'ENDSSH'
 sudo -S <<< "Azure.123456@e" yum update -y
+sudo -S <<< "Azure.123456@e" yum install java-1.8.0-openjdk
 exit
 ENDSSH
