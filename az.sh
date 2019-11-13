@@ -17,7 +17,9 @@ sshpass -p 'Azure.123456@e' ssh -t -t -o StrictHostKeyChecking=no azureuser@40.1
 
 sudo -S <<< "Azure.123456@e(password)”
 
+yum -y update
+
 su -c "yum install java-1.8.0-openjdk" -Y
 
-wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz
+wget http://apachemirror.wuchna.com/tomcat/tomcat-9/v9.0.27/bin/apache-tomcat-9.0.27.tar.gz /usr/share
 
