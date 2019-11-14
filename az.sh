@@ -20,7 +20,7 @@ sudo -S <<< "Azure.123456@e" yum install java-1.8.0-openjdk -y
 #sudo -S <<< "Azure.123456@e" tar -xvzf apache-tomcat-9.0.27.tar.gz
 #scp -r /var/root/.jenkins/workspace/Azure/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps 
 #sudo -S <<< “Azure.123456@e” scp -r /var/root/.jenkins/workspace/Azure/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps
-#sudo -S <<< “Azure.123456@e” scp -r /Users/nisum/Desktop/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps
-sshpass -p 'Azure.123456@e' scp  /Users/nisum/Desktop/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps
+scp -r /Users/nisum/Desktop/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps
+#sshpass -p 'Azure.123456@e' scp  /Users/nisum/Desktop/hello-world-war-1.0.0.war azureuser@40.121.48.14:/home/azureuser/apache-tomcat-9.0.27/webapps
 exit
 ENDSSH
